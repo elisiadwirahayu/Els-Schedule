@@ -1,0 +1,6 @@
+{
+  "name": "Daily Routine Tracker",
+  "description": "An 8-bit retro styled real-time status tracker for daily activities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

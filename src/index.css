@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-pixel-blue: #406AAF;
+  --color-pixel-yellow: #F7DD7D;
+  --color-pixel-dark: #1A1A1A;
+  --color-pixel-light: #F4F4F4;
+  --font-pixel: "Press Start 2P", monospace;
+  --font-vt323: "VT323", monospace;
+}
+
+@layer utilities {
+  .animate-pixel-blink {
+    animation: pixel-blink 1.2s steps(2, start) infinite;
+  }
+}
+
+@keyframes pixel-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Custom Scrollbar for Quest Log */
+.scrollbar-pixel::-webkit-scrollbar {
+  width: 16px;
+}
+.scrollbar-pixel::-webkit-scrollbar-track {
+  background: var(--color-pixel-yellow);
+  border-left: 4px solid #000;
+}
+.scrollbar-pixel::-webkit-scrollbar-thumb {
+  background: var(--color-pixel-blue);
+  border-left: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-top: 4px solid #000;
+}
+.scrollbar-pixel::-webkit-scrollbar-thumb:hover {
+  background: #5A85D6;
+}
